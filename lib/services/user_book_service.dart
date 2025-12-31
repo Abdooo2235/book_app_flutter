@@ -1,12 +1,12 @@
-import '../config/api_config.dart';
-import '../models/user_book.dart';
 import 'api_service.dart';
+import '../models/user_book.dart';
+import '../config/api_config.dart';
 
-/// UserBook Service - Operations for user-book relationships
+/// UserBook Service - Manage user's book collection
 class UserBookService {
   final ApiService _api = ApiService();
 
-  /// Get all user-book relationships
+  /// Get all user books
   Future<List<UserBook>> getAll() async {
     final response = await _api.get(ApiConfig.userBooks);
     if (response is List) {
@@ -15,7 +15,7 @@ class UserBookService {
     return [];
   }
 
-  /// Get books for a specific user
+  /// Get user books by user ID
   Future<List<UserBook>> getByUserId(int userId) async {
     final all = await getAll();
     return all.where((ub) => ub.userId == userId).toList();
@@ -41,7 +41,7 @@ class UserBookService {
     }
   }
 
-  /// Check if user has a book
+  /// Check if user has a specific book
   Future<UserBook?> checkUserHasBook(int userId, int bookId) async {
     final userBooks = await getByUserId(userId);
     try {

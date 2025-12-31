@@ -1,6 +1,6 @@
-import '../config/api_config.dart';
-import '../models/book.dart';
 import 'api_service.dart';
+import '../models/book.dart';
+import '../config/api_config.dart';
 
 /// Book Service - CRUD operations for books
 class BookService {
@@ -27,16 +27,12 @@ class BookService {
   /// Create new book
   Future<Book?> create(Book book) async {
     try {
-      print('Creating book: ${book.toJson()}'); // Debug
       final response = await _api.post(ApiConfig.books, book.toJson());
-      print('Create response: $response'); // Debug
       if (response != null) {
         return Book.fromJson(response);
       }
-      // If API returned success with empty body, return the input book
       return book;
     } catch (e) {
-      print('Create error: $e'); // Debug
       rethrow;
     }
   }

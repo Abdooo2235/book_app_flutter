@@ -32,7 +32,7 @@ class CustomButton extends StatelessWidget {
           onPressed: isLoading ? null : onPressed,
           style: OutlinedButton.styleFrom(
             side: BorderSide(
-              color: isDark ? AppColors.primaryLight : AppColors.primary,
+              color: isDark ? AppColors.secondary : AppColors.primary,
               width: 2,
             ),
             shape: RoundedRectangleBorder(
@@ -41,7 +41,7 @@ class CustomButton extends StatelessWidget {
           ),
           child: _buildChild(
             context,
-            isDark ? AppColors.primaryLight : AppColors.primary,
+            isDark ? AppColors.secondary : AppColors.primary,
           ),
         ),
       );
