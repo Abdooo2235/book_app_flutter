@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }) {
     final isSelected = _currentIndex == index;
     final color = isSelected
-        ? (isDark ? AppColors.primaryLight : AppColors.primary)
+        ? (isDark ? AppColors.secondary : AppColors.primary)
         : (isDark ? AppColors.textSecondaryDark : AppColors.textSecondaryLight);
 
     return GestureDetector(
@@ -88,8 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
-              ? (isDark ? AppColors.primaryLight : AppColors.primary)
-                    .withValues(alpha: 0.1)
+              ? (isDark ? AppColors.secondary : AppColors.primary).withValues(
+                  alpha: 0.1,
+                )
               : Colors.transparent,
           borderRadius: BorderRadius.circular(12),
         ),

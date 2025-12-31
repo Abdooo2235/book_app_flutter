@@ -1,0 +1,15 @@
+ERROR|COMPILE_TIME_ERROR|URI_DOES_NOT_EXIST|C:\\flutter_projects\\book_app_flutter\\lib\\app.dart|3|8|35|Target of URI doesn't exist: 'screens/splash/splash_screen.dart'.
+ERROR|COMPILE_TIME_ERROR|CREATION_WITH_NON_TYPE|C:\\flutter_projects\\book_app_flutter\\lib\\app.dart|28|33|12|The name 'SplashScreen' isn't a class.
+ERROR|COMPILE_TIME_ERROR|URI_DOES_NOT_EXIST|C:\\flutter_projects\\book_app_flutter\\lib\\screens\\home\\home_screen.dart|2|8|33|Target of URI doesn't exist: '../books/books_list_screen.dart'.
+ERROR|COMPILE_TIME_ERROR|URI_DOES_NOT_EXIST|C:\\flutter_projects\\book_app_flutter\\lib\\screens\\home\\home_screen.dart|3|8|34|Target of URI doesn't exist: '../my_books/my_books_screen.dart'.
+ERROR|COMPILE_TIME_ERROR|CREATION_WITH_NON_TYPE|C:\\flutter_projects\\book_app_flutter\\lib\\screens\\home\\home_screen.dart|20|11|15|The name 'BooksListScreen' isn't a class.
+ERROR|COMPILE_TIME_ERROR|CREATION_WITH_NON_TYPE|C:\\flutter_projects\\book_app_flutter\\lib\\screens\\home\\home_screen.dart|21|11|13|The name 'MyBooksScreen' isn't a class.
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_GETTER|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\common\\custom_button.dart|35|41|12|The getter 'primaryLight' isn't defined for the type 'AppColors'.
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_GETTER|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\common\\custom_button.dart|44|32|12|The getter 'primaryLight' isn't defined for the type 'AppColors'.
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_GETTER|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\common\\empty_state.dart|35|44|12|The getter 'primaryLight' isn't defined for the type 'AppColors'.
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_GETTER|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\common\\empty_state.dart|42|43|12|The getter 'primaryLight' isn't defined for the type 'AppColors'.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\cards\\book_card.dart|49|35|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\cards\\book_card.dart|85|53|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\cards\\book_card.dart|97|53|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\cards\\book_card.dart|106|53|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\flutter_projects\\book_app_flutter\\lib\\widgets\\cards\\book_card.dart|176|31|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
