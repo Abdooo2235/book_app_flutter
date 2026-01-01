@@ -1,9 +1,5 @@
 /// API Configuration
-/// Update baseUrl to match your .NET backend URL
 class ApiConfig {
-  // Change this to your .NET backend URL
-  // For Android emulator use: http://10.0.2.2:5000
-  // For iOS simulator/real device use your machine's IP: http://192.168.x.x:5000
   static const String baseUrl = 'http://10.122.109.131:5101';
 
   // API Endpoints
